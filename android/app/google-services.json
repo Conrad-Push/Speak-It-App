@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "162902396617",
+    "project_id": "speak-it-app-398021",
+    "storage_bucket": "speak-it-app-398021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162902396617:android:3cb7557ad16c1facbbc718",
+        "android_client_info": {
+          "package_name": "com.kushka.speakitapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdWkqyz2SX3lj1rAh20NbnXVNJ1UX1FOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
