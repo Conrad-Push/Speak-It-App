@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         title: texts.EnglishTexts.profilePageTitle,
         leadingButton: AppBarMenuButton(),
         secondaryButton: [AppBarSettingsButton()],
@@ -21,11 +21,16 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              margin: const EdgeInsets.only(left: 20, right: 20, top: 30, bottom: 30),
+              margin: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 30,
+                bottom: 30,
+              ),
               color: Colors.blueGrey,
               child: Text(
                 texts.EnglishTexts.welcomeMessage('Konrad'),
-                style: TextStyle(
+                style: const TextStyle(
                   color: colors.TextColors.fontsMain,
                   fontSize: 30,
                   fontWeight: FontWeight.normal,
@@ -33,7 +38,12 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(left: 20, right: 20, top: 30, bottom: 30),
+              margin: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 30,
+                bottom: 30,
+              ),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: Colors.blueGrey,
