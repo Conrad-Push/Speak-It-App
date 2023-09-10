@@ -1,9 +1,17 @@
 class EnglishTexts {
-  static const welcomeMessage = "Welcome to Speak It App";
+  // Profile page
+  static const profilePageTitle = "Profile";
+
+  // General
+  static String welcomeMessage(String username) => "Welcome $username!";
 }
 
 
 class PolishTexts {
-  static const welcomeMessage = "Witaj w Speak It App";
+  // Strona profilu
+  static const profilePageTitle = "Profil";
+
+  // Ogólne
+  static String welcomeMessage(String username) => "Witaj $username!";
 }
 
