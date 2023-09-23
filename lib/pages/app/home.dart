@@ -12,49 +12,43 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CustomAppBar(
-        title: texts.EnglishTexts.profilePageTitle,
+        title: texts.EnglishTexts.homePageTitle,
         leadingButton: AppBarMenuButton(),
         secondaryButton: [AppBarSettingsButton()],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              margin: const EdgeInsets.only(
-                left: 20,
-                right: 20,
-                top: 30,
-                bottom: 30,
-              ),
-              color: Colors.blueGrey,
-              child: Text(
-                texts.EnglishTexts.welcomeMessage('Konrad'),
-                style: const TextStyle(
-                  color: colors.TextColors.fontsMain,
-                  fontSize: 30,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
+      body: SingleChildScrollView(
+        child: Container(
+          color: Colors.grey, //todo remove color
+          padding: const EdgeInsets.all(10),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                greetingsText('Konrad'),
+              ],
             ),
-            Container(
-              margin: const EdgeInsets.only(
-                left: 20,
-                right: 20,
-                top: 30,
-                bottom: 30,
-              ),
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: Colors.blueGrey,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.orange.shade300,
-              ),
-            ),
-          ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Container greetingsText(String name) {
+    return Container(
+      margin: const EdgeInsets.only(
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 15,
+      ),
+      color: Colors.blueGrey, //todo remove color
+      child: Text(
+        texts.EnglishTexts.welcomeMessage(name),
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          color: colors.TextColors.fontsMain,
+          fontSize: 30,
+          fontWeight: FontWeight.w600,
         ),
       ),
     );

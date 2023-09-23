@@ -7,5 +7,5 @@ class TextColors {
 class ElementsColors {
   static const appBarBackground = Colors.white;
   static const appBarButton = Colors.black;
-  static const appBarButtonBackground = Color(0xffF7F8F8);
+  static const appBarButtonBackground = Color(0xfff5f5f5);
 }

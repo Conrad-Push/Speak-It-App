@@ -1,4 +1,7 @@
 class EnglishTexts {
+  // Home page
+  static const homePageTitle = "Home";
+
   // Profile page
   static const profilePageTitle = "Profile";
 
@@ -8,6 +11,9 @@ class EnglishTexts {
 
 
 class PolishTexts {
+  // Strona główna
+  static const homePageTitle = "Strona główna";
+
   // Strona profilu
   static const profilePageTitle = "Profil";
 
