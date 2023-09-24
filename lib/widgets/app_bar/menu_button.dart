@@ -18,15 +18,13 @@ class AppBarMenuButton extends StatelessWidget {
           color: colors.ElementsColors.appBarButtonBackground,
           borderRadius: BorderRadius.circular(10),
         ),
-        child: ColorFiltered(
+        child: SvgPicture.asset(
+          'assets/graphics/icons/menu_icon.svg',
+          height: 15,
+          width: 15,
           colorFilter: const ColorFilter.mode(
             colors.ElementsColors.appBarButton,
             BlendMode.srcIn,
-          ),
-          child: SvgPicture.asset(
-            'assets/graphics/icons/menu_icon.svg',
-            height: 15,
-            width: 15,
           ),
         ),
       ),
